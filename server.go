@@ -36,7 +36,7 @@ func registerHandler(w http.ResponseWriter, r *http.Request) {
 		fmt.Fprintf(w, "ParseForm() err: %v", err)
 		return
 	}
-	fmt.Fprintf(w, "POST request successful.")
+	fmt.Fprintf(w, "POST request successful.\n")
 
 	username := r.FormValue("email")
 	password := r.FormValue("username")
